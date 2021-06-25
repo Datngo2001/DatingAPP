@@ -13,6 +13,9 @@ export class AppComponent implements OnInit {
 
   title = 'The Dating App';
 
+  // Injecting services
+  // like create a field http in this class
+  // which is an instance of HttpClient from external source
   constructor(private http: HttpClient) { }
 
   ngOnInit() {

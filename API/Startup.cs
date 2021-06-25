@@ -14,6 +14,8 @@ using Microsoft.OpenApi.Models;
 
 using Microsoft.EntityFrameworkCore;
 using API.Data;
+using API.Interfaces;
+using API.Service;
 
 namespace API
 {
@@ -29,6 +31,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<ITokenService, TokenService>();
             services.AddDbContext<DataContext>(option =>
             {
                 option.UseSqlite(Configuration.GetConnectionString("DefaultConnection"));
