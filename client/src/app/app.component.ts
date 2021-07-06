@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { User } from './_model/user';
+import { AccountService } from './_services/account.service';
 
 @Component({
   selector: 'app-root',
@@ -16,20 +18,14 @@ export class AppComponent implements OnInit {
   // Injecting services
   // like create a field http in this class
   // which is an instance of HttpClient from external source
-  constructor(private http: HttpClient) { }
+  constructor(private accountService: AccountService) { }
 
   ngOnInit() {
-    this.getUser();
+    this.setCurrentUser();
   }
 
-  getUser() {
-    this.http.get('https://localhost:5001/api/users').subscribe(
-      response => {
-        this.users = response
-      },
-      error => {
-        console.error()
-      }
-    )
+  setCurrentUser() {
+    const user: User = JSON.parse(localStorage.getItem('user'));
+    this.accountService.setCurrentUser(user);
   }
 }

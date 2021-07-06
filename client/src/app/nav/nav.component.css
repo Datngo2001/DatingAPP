@@ -1,0 +1,6 @@
+.navbar-nav {
+    flex: 1;
+}
+.dropdown-toggle, .dropdown-item{
+    cursor: pointer;
+}
