@@ -58,7 +58,7 @@ namespace API.Controllers
             {
                 if (computedHash[i] != user.PasswordHash[i]) return Unauthorized("Invalid Password");
             }
-
+            
             return new UserDto()
             {
                 Token = _tokenService.CreateToken(user),
