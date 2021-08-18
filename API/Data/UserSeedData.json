@@ -108,7 +108,7 @@
         "Country": "Bahamas",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/4.jpg",
+                "Url": "https://randomuser.me/api/portraits/men/4.jpg",
                 "IsMain": true
             }
         ]
@@ -127,7 +127,7 @@
         "Country": "Algeria",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/75.jpg",
+                "Url": "https://randomuser.me/api/portraits/men/75.jpg",
                 "IsMain": true
             }
         ]
@@ -146,7 +146,7 @@
         "Country": "United Kingdom",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/87.jpg",
+                "Url": "https://randomuser.me/api/portraits/men/87.jpg",
                 "IsMain": true
             }
         ]
@@ -165,7 +165,7 @@
         "Country": "Brazil",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/14.jpg",
+                "Url": "https://randomuser.me/api/portraits/men/14.jpg",
                 "IsMain": true
             }
         ]
@@ -184,7 +184,7 @@
         "Country": "Japan",
         "Photos": [
             {
-                "Url": "https://randomuser.me/api/portraits/women/35.jpg",
+                "Url": "https://randomuser.me/api/portraits/men/35.jpg",
                 "IsMain": true
             }
         ]
